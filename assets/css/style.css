@@ -211,14 +211,27 @@ a.btn-primary {
   .banner .banner__image {
     margin-left: 40px; }
 
+.content_plants {
+  position: relative;
+  height: 110px; }
+  .content_plants img.plants_left {
+    position: absolute;
+    left: 70px;
+    bottom: -120px; }
+  .content_plants img.plants_right {
+    position: absolute;
+    right: 70px;
+    bottom: -120px; }
+
 footer {
   background-image: url(../img/bgfooter.svg); }
   footer .footer__bg {
     display: flex;
     align-items: end;
-    height: 500px; }
+    height: 600px; }
     footer .footer__bg .footer__content {
-      display: flex; }
+      display: flex;
+      margin-bottom: 100px; }
       footer .footer__bg .footer__content .footer__col {
         display: flex;
         flex-direction: column;
