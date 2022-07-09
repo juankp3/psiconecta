@@ -1,187 +1,21 @@
-@import "colors"
-@import "variables"
-@import "mixins"
-body
-  padding: 0%
-  margin: 0%
+@import "abstracts/base"
+@import "abstracts/mixins"
 
-*, figure, img
-  margin: 0
-  padding: 0
+@import "components/card"
+@import "components/card_two"
+@import "components/header"
+@import "components/banner"
 
-.bg
-  margin: 0 auto
-  width: 1200px
-  background-image: url(../img/ondas.svg)
-  height: 464px
+@import "pages/home"
 
 
 
-.row
-  margin: 0 auto
-  width: 1200px
-
-.header
-  display: flex
-  width: 94%
-  height: 60px
-  margin: 0 auto
-
-.header__container
-  display: flex
-  width: 100%
-  align-items: center
-  justify-content: space-between
-  border-bottom: solid 1px $color-primary
-
-.header__link
-  list-style: none
-  display: flex
-  margin: 0
-  padding: 0
-  gap: 18px
-  li a
-    text-decoration: none
-    text-transform: uppercase
-    color: $color-primary
-    padding: 4px 8px
-    &:hover
-      border-bottom: solid 3px $color-red
-  li a.btn-primary
-    @include primary_button()
-  li a.--active
-    border-bottom: solid 3px $color-red
-
-.banner
-  margin-top: 36px
-  display: flex
-  justify-content: center
-  article
-    width: 100%
-    display: flex
-    justify-content: center
-  a.btn-primary
-    @include primary_button($color-blue, $color-blue-dark)
-  .banner__info
-    width: 380px
-    h2
-      font-size: 36px
-      color : $color-primary-light
-      text-transform: uppercase
-      margin: 0
-    p
-      color: $color-primary
-      font-size: 22px
-      margin: 0
-  .banner__buttton
-    margin-top: 30px
-  .banner__image
-    margin-left: 40px
-
-.content_card
-  margin-top: 30px
-  text-align: center
-  h1
-    font-size: 30px
-    line-height: 50px
-    color: $color-primary-light
-  p
-    font-size: 21px
-    color: $color-grey-dark
-.cards
-  display: flex
-  margin-top: 40px
-  margin-bottom: 40px
-  justify-content: space-around
-  article
-    display: flex
-    flex-direction: column
-    border: solid 1px $color-primary-soft
-    border-radius: 30px
-    width: 190px
-    padding: 30px 30px 60px 30px
-    text-align: center
-    figure
-      height: 145px
-      display: flex
-      align-items: center
-      justify-content: center
-    h3
-      font-size: 18px
-      color: $color-primary-light
-      margin: 15px 0px
-    p
-      color: $color-grey-dark
-      font-size: 15px
-    img
-      object-fit: contain
-
-.bg_onda
-  background-image: url(../img/bg_onda.svg)
-  height: 670px
-  padding-top: 130px
-  h1
-    font-size: 30px
-    color: $color-white
-    text-align: center
-  p.tagline
-    color: $color-white
-    font-size: 21px
-    text-align: center
-    width: 500px
-    margin: auto
-  p.btn
-    text-align: center
-    margin-top: 30px
-    a.btn-primary
-      text-align: center
-      margin: auto
-      @include primary_button()
-      span
-        padding: 4px 40px 4px 40px
 
 
-.cards_two
-  display: flex
-  justify-content: space-around
-  width: 90%
-  margin: 0 auto
-  article
-    display: flex
-    flex-direction: column
-    border-radius: 30px
-    width: 170px
-    padding: 30px 30px 40px 30px
-    text-align: center
-    figure
-      height: 195px
-      display: flex
-      align-items: center
-      justify-content: center
-    p
-      color: $color-white
-      font-size: 14px
-      line-height: 22px
-    p.cards_two__one, p.cards_two__two, p.cards_two__tree, p.cards_two__for
-      margin: 8px 10px
-      &:before
-        font-size: 30px
-        font-weight: bold
-        position: absolute
-        margin-left: -40px
-    p.cards_two__one
-      line-height: 15px
-      &:before
-        content: "1."
-    p.cards_two__two
-      &:before
-        content: "2."
-    p.cards_two__tree
-      &:before
-        content: "3."
-    p.cards_two__for
-      &:before
-        content: "4."
+
+
+
+
 
 
 

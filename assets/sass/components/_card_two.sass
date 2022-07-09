@@ -1,0 +1,41 @@
+.cards_two
+  display: flex
+  justify-content: space-around
+  width: 90%
+  margin: 0 auto
+  article
+    display: flex
+    flex-direction: column
+    border-radius: 30px
+    width: 170px
+    padding: 30px 30px 40px 30px
+    text-align: center
+    figure
+      height: 195px
+      display: flex
+      align-items: center
+      justify-content: center
+    p
+      color: $color-white
+      font-size: 14px
+      line-height: 22px
+    p.cards_two__one, p.cards_two__two, p.cards_two__tree, p.cards_two__for
+      margin: 8px 10px
+      &:before
+        font-size: 30px
+        font-weight: bold
+        position: absolute
+        margin-left: -40px
+    p.cards_two__one
+      line-height: 15px
+      &:before
+        content: "1."
+    p.cards_two__two
+      &:before
+        content: "2."
+    p.cards_two__tree
+      &:before
+        content: "3."
+    p.cards_two__for
+      &:before
+        content: "4."

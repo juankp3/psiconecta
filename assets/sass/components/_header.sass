@@ -1,0 +1,35 @@
+.bg
+  margin: 0 auto
+  background-image: url(../img/ondas.svg)
+  height: 464px
+
+.header
+  display: flex
+  width: 94%
+  height: 60px
+  margin: 0 auto
+
+.header__container
+  display: flex
+  width: 100%
+  align-items: center
+  justify-content: space-between
+  border-bottom: solid 1px $color-primary
+
+.header__link
+  list-style: none
+  display: flex
+  margin: 0
+  padding: 0
+  gap: 18px
+  li a
+    text-decoration: none
+    text-transform: uppercase
+    color: $color-primary
+    padding: 4px 8px
+    &:hover
+      border-bottom: solid 3px $color-red
+  li a.btn-primary
+    @include primary_button()
+  li a.--active
+    border-bottom: solid 3px $color-red

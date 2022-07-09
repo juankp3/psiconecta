@@ -1,5 +1,5 @@
-@mixin primary_button($bg: $color-red, $sd : $color-red-dark)
-  background: $sd
+@mixin primary_button($background: $color-red, $shadow : $color-red-dark)
+  background: $shadow
   border-radius: 20px
   border: solid 3px $color-grey
   padding: 6px 0px 4px 0px !important
@@ -8,7 +8,7 @@
   span
     padding: 4px 16px 4px 16px
     border-radius: 20px
-    background: $bg
+    background: $background
     color: $color-white
   &:hover
     border: solid 3px $color-grey !important
