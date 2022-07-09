@@ -1,0 +1,14 @@
+@mixin primary_button($bg: $color-red, $sd : $color-red-dark)
+  background: $sd
+  border-radius: 20px
+  border: solid 3px $color-grey
+  padding: 6px 0px 4px 0px !important
+  text-decoration: none
+  text-transform: uppercase
+  span
+    padding: 4px 16px 4px 16px
+    border-radius: 20px
+    background: $bg
+    color: $color-white
+  &:hover
+    border: solid 3px $color-grey !important
