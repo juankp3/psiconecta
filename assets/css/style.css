@@ -308,10 +308,21 @@ a.btn-primary {
     position: absolute;
     left: 70px;
     bottom: -120px; }
+    @media screen and (max-width: 480px) {
+      .content_plants img.plants_left {
+        left: 15px;
+        bottom: -70px; } }
   .content_plants img.plants_right {
     position: absolute;
     right: 70px;
     bottom: -120px; }
+    @media screen and (max-width: 480px) {
+      .content_plants img.plants_right {
+        display: none; } }
+
+@media screen and (max-width: 480px) {
+  .row.content_plants {
+    width: 100%; } }
 
 footer {
   background-image: url(../img/bgfooter.svg); }
@@ -337,7 +348,6 @@ footer {
       margin-bottom: 100px; }
       @media screen and (max-width: 480px) {
         footer .footer__bg .footer__content {
-          padding: 0 4%;
           margin: 0;
           flex-direction: column;
           padding: 0 4% 30px 4%;
@@ -354,7 +364,7 @@ footer {
         @media screen and (max-width: 480px) {
           footer .footer__bg .footer__content .footer__col .footer__datacol0 {
             width: 90%;
-            margin: 40px 0; } }
+            margin: 60px 0 40px 0; } }
         footer .footer__bg .footer__content .footer__col .footer__datacol0 img {
           width: 80%; }
         footer .footer__bg .footer__content .footer__col .footer__datacol1 {
