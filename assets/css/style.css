@@ -317,7 +317,9 @@ footer {
   background-image: url(../img/bgfooter.svg); }
   @media screen and (max-width: 480px) {
     footer {
-      width: 100%; } }
+      width: 100%;
+      background-position-x: -100px;
+      background-repeat: no-repeat; } }
   @media screen and (max-width: 480px) {
     footer .row {
       width: 100%; } }
@@ -329,7 +331,7 @@ footer {
       footer .footer__bg {
         width: 100%;
         height: auto;
-        padding: 10% 0 10% 0; } }
+        padding: 15% 0 0 0; } }
     footer .footer__bg .footer__content {
       display: flex;
       margin-bottom: 100px; }
@@ -337,7 +339,9 @@ footer {
         footer .footer__bg .footer__content {
           padding: 0 4%;
           margin: 0;
-          flex-direction: column; } }
+          flex-direction: column;
+          padding: 0 4% 30px 4%;
+          background-color: #d9f1fd; } }
       footer .footer__bg .footer__content .footer__col {
         display: flex;
         flex-direction: column;
