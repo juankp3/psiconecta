@@ -31,10 +31,25 @@ footer
                 padding: 0 4% 30px 4%
                 background-color: #d9f1fd
 
+            .footer__col.footer__content_logo
+                display: none
+
+                @include media-xs()
+                    display: flex
+
             .footer__col
                 display: flex
                 flex-direction: column
                 align-items: center
+
+                .footer__datacol0
+
+                    @include media-xs()
+                        width: 90%
+                        margin: 40px 0
+
+                    img
+                        width: 80%
 
                 .footer__datacol1
                     width: 80%
