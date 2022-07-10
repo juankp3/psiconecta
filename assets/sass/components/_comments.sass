@@ -11,9 +11,16 @@
         font-size: 30px 
         text-align: center
 
+        @include media-xs()
+            font-size: 20px
+
     .comments__carrousel
         width: 50%
         margin: 30px
+
+        @include media-xs()
+            width: 100%
+            margin: 30px 0
 
         .carrousel__container
             display: flex
@@ -45,3 +52,12 @@
                 line-height: 19.5px
                 width: 470px
                 text-align: center
+
+                @include media-xs()
+                    width: 100%
+
+.row.content_comments
+
+    @include media-xs()
+        width: 92%
+        padding: 0 4%
