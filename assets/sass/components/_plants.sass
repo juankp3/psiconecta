@@ -1,25 +1,19 @@
 .content_plants
-    position: relative    
-    height: 110px
-
-    img.plants_left
-        position: absolute
-        left: 70px
-        bottom: -120px
-
-        @include media-xs()
-            left: 15px
-            bottom: -70px
-
-    img.plants_right
-        position: absolute
-        right: 70px
-        bottom: -120px
-
-        @include media-xs()
-            display: none
-
-.row.content_plants
-
+  position: relative    
+  height: 110px
+  img.plants_left
+    position: absolute
+    left: 70px
+    bottom: -120px
     @include media-xs()
-        width: 100%
+      left: 15px
+      bottom: -70px
+  img.plants_right
+    position: absolute
+    right: 70px
+    bottom: -120px
+    @include media-xs()
+      display: none
+.row.content_plants
+  @include media-xs()
+    width: 100%
