@@ -9,3 +9,20 @@ window.onload = function () {
         closest.classList.add('--active');
     }));
 }
+
+
+// LANDING WINTER - SWIPERJS 
+$(function() {
+
+    var swiper = new Swiper(".mySwiper-winter", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  
+  });

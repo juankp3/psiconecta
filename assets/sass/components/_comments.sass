@@ -1,63 +1,58 @@
 .content_comments
-    position: relative
-    background-color: #E8F6FF
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-
-    h4
-        color: $color-blue
-        font-size: 30px 
-        text-align: center
-
-        @include media-xs()
-            font-size: 20px
-
-    .comments__carrousel
-        width: 50%
-        margin: 30px
-
-        @include media-xs()
-            width: 100%
-            margin: 30px 0
-
-        .carrousel__container
-            display: flex
-            flex-direction: column
-            align-items: center
-
-            .carrousel__face
-                width: 50px
-                height: 50px
-                background: #D7BDFC
-            
-            .carrousel__bullets 
-                margin: 20px 0
-
-                ul
-                    list-style: none
-                    display: flex
-
-                    li
-                        width: 10px
-                        height: 10px
-                        background: #5F5EAA
-                        margin: 0 5px 0 0 
-
-            p.carrousel__text
-                color: $color-primary-light
-                font-weight: 400
-                font-size: 16px
-                line-height: 19.5px
-                width: 470px
-                text-align: center
-
-                @include media-xs()
-                    width: 100%
-
-.row.content_comments
-
+  position: relative
+  background-color: #E8F6FF
+  background: url('../img/comments_background.svg')
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  height: 547px
+  h4
+    color: $color-blue
+    font-size: 30px 
+    text-align: center
     @include media-xs()
-        width: 92%
-        padding: 0 4%
+      font-size: 20px
+  .comments__carrousel
+    width: 50%
+    overflow: hidden
+    @include media-xs()
+      width: 100%
+    .swiper .swiper-pagination
+      bottom: 100px
+      @include media-xs()
+        bottom: 200px
+    .swiper .carrousel__container
+      display: flex
+      flex-direction: column
+      align-items: center
+      .carrousel__face
+        width: 158px
+        height: 125px
+      .carrousel__bullets 
+        margin: 10px 0 20px 0
+        ul
+          list-style: none
+          display: flex
+          li
+            margin: 0 5px 0 0
+            img
+              opacity: 0.5 
+          li.--active img
+            opacity: 1 !important
+      p.carrousel__text
+        color: $color-primary-light
+        font-weight: 400
+        font-size: 16px
+        line-height: 19.5px
+        width: 470px
+        text-align: center
+        @include media-xs()
+          width: 100%
+.row.content_comments
+  @include media-xs()
+    width: 92%
+    padding: 80px 4% 0 4%
+    margin: 0 0 30px 0
+    justify-content: flex-start
+    background-repeat: no-repeat
