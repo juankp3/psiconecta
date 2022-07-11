@@ -244,8 +244,8 @@ a.btn-primary {
           @media screen and (max-width: 480px) {
             .content_faqs .faqs__content_list ul.faqs__list li .faqs__title h6 {
               font-size: 18px; } }
-        .content_faqs .faqs__content_list ul.faqs__list li .faqs__title i.down {
-          font-size: 5px; }
+          .content_faqs .faqs__content_list ul.faqs__list li .faqs__title h6 i.down {
+            font-size: 5px; }
       .content_faqs .faqs__content_list ul.faqs__list li .faqs__text {
         padding: 20px 10px; }
         .content_faqs .faqs__content_list ul.faqs__list li .faqs__text p {

@@ -1,78 +1,63 @@
 .content_faqs
-    position: relative
-    padding: 50px 0
-
-    .faqs__title h3
-        font-size: 30px
-        color: $color-blue
-        text-align: center
-
-        @include media-xs()
-            font-size: 20px
-    
-    .faqs__content_list
-        display: flex
-        justify-content: center
-
-        ul.faqs__list
-            width: 50%
-            list-style: none
-            margin: 50px 0
-
-            @include media-xs()
-                width: 100%
-
-            li .faqs__title
-                background: #E1F4FF
-                display: flex
-                align-items: center
-                padding: 0 10px
-                height: 40px
-                border-bottom: solid 1px #70A6C9
-
-                h6
-                    font-size: 16px
-                    color: $color-grey-dark
-
-                    @include media-xs()
-                        font-size: 18px
-
-                i.down
-                    font-size: 5px
-            
-            li .faqs__text
-                padding: 20px 10px
-
-                p
-                    font-size: 16px
-                    line-height: 19.5px
-                    color: #4F4F4F
-
-                input[type="button"]
-                    display: flex
-                    width: 100px
-                    font-size: 13px
-                    color: #F6F8F4
-                    background-color: $color-blue
-                    
-                input[type="button"]
-                    border: solid 3px #D4D5D6
-                    display: flex
-                    width: 100px
-                    font-size: 13px
-                    color: #F6F8F4
-                    background-color: #5485A5
-                    justify-content: center
-                    border-radius: 20px
-                    padding: 8px 0
-                    margin: 10px 0 20px 0
-
-                    @include media-xs()
-                        width: 60%
-                        margin: 20px auto
-                        padding: 14px 0
-
-.row.content_faqs
+  position: relative
+  padding: 50px 0
+  .faqs__title h3
+    font-size: 30px
+    color: $color-blue
+    text-align: center
     @include media-xs()
-        width: 92%
-        padding: 50px 4%
+      font-size: 20px
+  .faqs__content_list
+    display: flex
+    justify-content: center
+    ul.faqs__list
+      width: 50%
+      list-style: none
+      margin: 50px 0
+      @include media-xs()
+        width: 100%
+      li .faqs__title
+        background: #E1F4FF
+        display: flex
+        align-items: center
+        padding: 0 10px
+        height: 40px
+        border-bottom: solid 1px #70A6C9
+        h6
+          font-size: 16px
+          color: $color-grey-dark
+          @include media-xs()
+            font-size: 18px
+          i.down
+            font-size: 5px
+      li .faqs__text
+        padding: 20px 10px
+        p
+          font-size: 16px
+          line-height: 19.5px
+          color: #4F4F4F
+        input[type="button"]
+          display: flex
+          width: 100px
+          font-size: 13px
+          color: #F6F8F4
+          background-color: $color-blue    
+        input[type="button"]
+          border: solid 3px #D4D5D6
+          display: flex
+          width: 100px
+          font-size: 13px
+          color: #F6F8F4
+          background-color: #5485A5
+          justify-content: center
+          border-radius: 20px
+          padding: 8px 0
+          margin: 10px 0 20px 0
+          @include media-xs()
+            width: 60%
+            margin: 20px auto
+            padding: 14px 0
+.row.content_faqs
+  @include media-xs()
+    width: 92%
+    padding: 50px 4%
