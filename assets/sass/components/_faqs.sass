@@ -23,40 +23,35 @@
         padding: 0 10px
         height: 40px
         border-bottom: solid 1px #70A6C9
+        position: relative
+        cursor: pointer
         h6
           font-size: 16px
           color: $color-grey-dark
           @include media-xs()
-            font-size: 18px
-          i.down
-            font-size: 5px
+            font-size: 16px
+        h6:after
+          content: ""
+          width: 18px
+          height: 10px
+          top: 15px
+          right: 20px
+          position: absolute
+          background: url('../img/arrow_down.svg')
       li .faqs__text
         padding: 20px 10px
+        display: none
         p
           font-size: 16px
           line-height: 19.5px
           color: #4F4F4F
-        input[type="button"]
-          display: flex
-          width: 100px
-          font-size: 13px
-          color: #F6F8F4
-          background-color: $color-blue    
-        input[type="button"]
-          border: solid 3px #D4D5D6
-          display: flex
-          width: 100px
-          font-size: 13px
-          color: #F6F8F4
-          background-color: #5485A5
-          justify-content: center
-          border-radius: 20px
-          padding: 8px 0
-          margin: 10px 0 20px 0
-          @include media-xs()
-            width: 60%
-            margin: 20px auto
-            padding: 14px 0
+          margin: 0 0 10px 0
+        a.btn-primary
+          @include primary_button($color-blue, $color-blue-dark)
+      li.--active .faqs__text
+        display: block !important
+      li.--active .faqs__title h6:after
+        transform: rotate(180deg)
 .row.content_faqs
   @include media-xs()
     width: 92%
