@@ -577,6 +577,8 @@ ul.header__link li a.--active {
 @media screen and (max-width: 768px) {
   .banner {
     margin-top: 0px;
+    z-index: 1;
+    position: relative;
   }
 }
 .banner article {
