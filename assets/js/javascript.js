@@ -66,9 +66,15 @@ $(function() {
       1200: {
         slidesPerView: 3,
       },
-      // 550: {
-      //   slidesPerView: 1,
-      // }
+      992: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      480: {
+        slidesPerView: 1,
+      }
     },
     pagination: {
       el: ".swiper-pagination",
