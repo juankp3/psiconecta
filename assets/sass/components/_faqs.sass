@@ -1,12 +1,15 @@
 .content_faqs
   position: relative
   padding: 50px 0
-  .faqs__title h3
-    font-size: 30px
-    color: $color-blue
-    text-align: center
+  .faqs__title
     @include media-xs()
-      font-size: 20px
+      padding: 50px 4% 0 4%
+    h3
+      font-size: 30px
+      color: $color-blue
+      text-align: center
+      @include media-xs()
+        font-size: 20px
   .faqs__content_list
     display: flex
     justify-content: center
@@ -53,7 +56,5 @@
         background: $color-blue-light
       li.--active .faqs__title h6:after
         transform: rotate(180deg)
-.row.content_faqs
-  @include media-xs()
-    width: 92%
-    padding: 50px 4%
+    @include media-xs()
+      padding: 0 4%

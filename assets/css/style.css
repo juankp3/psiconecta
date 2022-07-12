@@ -368,6 +368,11 @@ ul.header__link li a.--active {
   position: relative;
   padding: 50px 0;
 }
+@media screen and (max-width: 480px) {
+  .content_faqs .faqs__title {
+    padding: 50px 4% 0 4%;
+  }
+}
 .content_faqs .faqs__title h3 {
   font-size: 30px;
   color: #5485A5;
@@ -455,11 +460,9 @@ ul.header__link li a.--active {
 .content_faqs .faqs__content_list ul.faqs__list li.--active .faqs__title h6:after {
   transform: rotate(180deg);
 }
-
 @media screen and (max-width: 480px) {
-  .row.content_faqs {
-    width: 92%;
-    padding: 50px 4%;
+  .content_faqs .faqs__content_list {
+    padding: 0 4%;
   }
 }
 
@@ -481,6 +484,7 @@ ul.header__link li a.--active {
 @media screen and (max-width: 480px) {
   .content_comments h4 {
     font-size: 20px;
+    padding: 80px 4% 0 4%;
   }
 }
 .content_comments .comments__carrousel {
@@ -489,7 +493,7 @@ ul.header__link li a.--active {
 }
 @media screen and (max-width: 480px) {
   .content_comments .comments__carrousel {
-    width: 100%;
+    width: 92%;
   }
 }
 .content_comments .comments__carrousel .swiper .swiper-pagination {
@@ -497,7 +501,7 @@ ul.header__link li a.--active {
 }
 @media screen and (max-width: 480px) {
   .content_comments .comments__carrousel .swiper .swiper-pagination {
-    bottom: 200px;
+    bottom: 120px;
   }
 }
 .content_comments .comments__carrousel .swiper .carrousel__container {
@@ -541,8 +545,6 @@ ul.header__link li a.--active {
 
 @media screen and (max-width: 480px) {
   .row.content_comments {
-    width: 92%;
-    padding: 80px 4% 0 4%;
     margin: 0 0 30px 0;
     justify-content: flex-start;
     background-repeat: no-repeat;
@@ -575,12 +577,6 @@ ul.header__link li a.--active {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .row.content_plants {
-    width: 100%;
-  }
-}
-
 footer {
   background-image: url(../img/bgfooter.svg);
 }
@@ -589,11 +585,6 @@ footer {
     width: 100%;
     background-position-x: -100px;
     background-repeat: no-repeat;
-  }
-}
-@media screen and (max-width: 480px) {
-  footer .row {
-    width: 100%;
   }
 }
 footer .footer__bg {
