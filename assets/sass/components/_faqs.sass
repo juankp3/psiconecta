@@ -11,18 +11,17 @@
     display: flex
     justify-content: center
     ul.faqs__list
-      width: 50%
+      width: 800px
       list-style: none
       margin: 50px 0
       @include media-xs()
         width: 100%
       li .faqs__title
-        background: #E1F4FF
         display: flex
         align-items: center
         padding: 0 10px
-        height: 40px
-        border-bottom: solid 1px #70A6C9
+        padding: 16px 15px
+        border-bottom: solid 1px $color-blue-soft
         position: relative
         cursor: pointer
         h6
@@ -50,6 +49,8 @@
           @include primary_button($color-blue, $color-blue-dark)
       li.--active .faqs__text
         display: block !important
+      li.--active .faqs__title
+        background: $color-blue-light
       li.--active .faqs__title h6:after
         transform: rotate(180deg)
 .row.content_faqs

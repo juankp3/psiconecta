@@ -11,7 +11,7 @@ window.onload = function () {
 }
 
 
-// LANDING WINTER - SWIPERJS 
+// LANDING WINTER - SWIPERJS
 $(function() {
 
     var swiper = new Swiper(".mySwiper-winter", {
@@ -24,5 +24,14 @@ $(function() {
         clickable: true,
       },
     });
-  
+
+  $("nav.header__rightcol").click(function(){
+    if ($(this).hasClass('--active')){
+      $(this).removeClass('--active')
+      return false
+    }
+    $(this).addClass('--active')
+    console.log('aaa')
+  })
+
   });

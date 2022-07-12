@@ -15,13 +15,52 @@
   align-items: center
   justify-content: space-between
   border-bottom: solid 1px $color-primary
+  @include media-md()
+    border-bottom: none
 
-.header__link
+nav.header__rightcol
+  @include media-md()
+    width: 100%
+    position: absolute
+    left: 0
+    top: 0
+    background: #70A6C9
+    margin-top: 58px
+    &:after
+      content: ""
+      width: 28px
+      height: 23px
+      top: -40px
+      right: 20px
+      position: absolute
+      cursor: pointer
+      background: url('../img/menu.svg')
+    ul.header__link
+      display: none
+nav.--active
+  &:after
+    background: url('../img/close.svg')
+  ul.header__link
+    display: block !important
+
+ul.header__link
   list-style: none
   display: flex
   margin: 0
   padding: 0
   gap: 18px
+  @include media-md()
+    margin: 0px 10px
+    flex-direction: column
+    gap: 0px
+    // display: none
+    // .--active
+    //   display: block
+  li
+    display: flex
+    @include media-md()
+      padding: 8px 0
+      border-bottom: solid 1px $color-white
   li a
     text-decoration: none
     text-transform: uppercase
@@ -29,7 +68,15 @@
     padding: 4px 8px
     &:hover
       border-bottom: solid 3px $color-red
+      @include media-md()
+        border-bottom: none
+    @include media-md()
+      display: flex
+      color: $color-white
+      width: 100%
   li a.btn-primary
     @include primary_button()
   li a.--active
     border-bottom: solid 3px $color-red
+    @include media-md()
+      border-bottom: none
