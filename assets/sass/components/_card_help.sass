@@ -11,6 +11,7 @@
     margin: auto
     @include media-xs()
       width: 96%
+      margin: 40px auto 0 auto
   p.btn
     text-align: center
     margin-top: 30px
@@ -30,6 +31,7 @@
       margin: auto
       @include media-xs()
         width: 70%
+        padding: 30px 30px 20px 30px
       figure
         height: 195px
         display: flex
@@ -70,3 +72,6 @@
     text-align: center
     @include media-xs()
       font-size: 24px
+  .swiper-help .swiper-pagination-bullets
+    @include media-xs()
+      bottom: auto
