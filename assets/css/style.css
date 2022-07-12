@@ -93,6 +93,9 @@ a.btn-primary:hover {
   object-fit: contain;
 }
 
+.content_help {
+  overflow: hidden;
+}
 .content_help .swiper {
   width: 100%;
 }
@@ -159,6 +162,9 @@ a.btn-primary:hover {
   content: "4.";
 }
 
+.content_therapy {
+  overflow: hidden;
+}
 .content_therapy .card_therapy article {
   display: flex;
   flex-direction: column;
