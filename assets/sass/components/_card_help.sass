@@ -1,41 +1,59 @@
-.card_help
-  display: flex
-  justify-content: space-around
-  width: 90%
-  margin: 0 auto
-  article
-    display: flex
-    flex-direction: column
-    border-radius: 30px
-    width: 170px
-    padding: 30px 30px 40px 30px
+.content_help
+  .swiper
+    width: 100%
+  p.tagline
+    color: $color-white
+    font-size: 21px
     text-align: center
-    figure
-      height: 195px
+    width: 500px
+    margin: auto
+  p.btn
+    text-align: center
+    margin-top: 30px
+    a.btn-primary
+      text-align: center
+      margin: auto
+      span
+        padding: 4px 40px 4px 40px
+  .card_help
+    // display: flex
+    // justify-content: space-around
+    // width: 90%
+    // margin: 0 auto
+    article
       display: flex
-      align-items: center
-      justify-content: center
-    p
-      color: $color-white
-      font-size: 14px
-      line-height: 22px
-    p.card_help__one, p.card_help__two, p.card_help__tree, p.card_help__for
-      margin: 8px 10px
-      &:before
-        font-size: 30px
-        font-weight: bold
-        position: absolute
-        margin-left: -40px
-    p.card_help__one
-      line-height: 15px
-      &:before
-        content: "1."
-    p.card_help__two
-      &:before
-        content: "2."
-    p.card_help__tree
-      &:before
-        content: "3."
-    p.card_help__for
-      &:before
-        content: "4."
+      flex-direction: column
+      border-radius: 30px
+      width: 170px
+      padding: 30px 30px 40px 30px
+      text-align: center
+      margin: auto
+      figure
+        height: 195px
+        display: flex
+        align-items: center
+        justify-content: center
+      p
+        color: $color-white
+        font-size: 14px
+        line-height: 22px
+      p.card_help__one, p.card_help__two, p.card_help__tree, p.card_help__for
+        margin: 8px 10px
+        &:before
+          font-size: 30px
+          font-weight: bold
+          position: absolute
+          margin-left: -40px
+      p.card_help__one
+        line-height: 15px
+        &:before
+          content: "1."
+      p.card_help__two
+        &:before
+          content: "2."
+      p.card_help__tree
+        &:before
+          content: "3."
+      p.card_help__for
+        &:before
+          content: "4."

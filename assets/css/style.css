@@ -46,6 +46,13 @@ a.btn-primary:hover {
   margin-bottom: 40px;
   justify-content: space-around;
 }
+@media screen and (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}
 .cards article {
   display: flex;
   flex-direction: column;
@@ -54,6 +61,18 @@ a.btn-primary:hover {
   width: 190px;
   padding: 30px 30px 60px 30px;
   text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  .cards article {
+    width: 190px;
+    padding: 30px 20px 60px 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .cards article {
+    width: 190px;
+    padding: 20px 10px 40px 10px;
+  }
 }
 .cards article figure {
   height: 145px;
@@ -74,63 +93,73 @@ a.btn-primary:hover {
   object-fit: contain;
 }
 
-.card_help {
-  display: flex;
-  justify-content: space-around;
-  width: 90%;
-  margin: 0 auto;
+.content_help .swiper {
+  width: 100%;
 }
-.card_help article {
+.content_help p.tagline {
+  color: #FFF;
+  font-size: 21px;
+  text-align: center;
+  width: 500px;
+  margin: auto;
+}
+.content_help p.btn {
+  text-align: center;
+  margin-top: 30px;
+}
+.content_help p.btn a.btn-primary {
+  text-align: center;
+  margin: auto;
+}
+.content_help p.btn a.btn-primary span {
+  padding: 4px 40px 4px 40px;
+}
+.content_help .card_help article {
   display: flex;
   flex-direction: column;
   border-radius: 30px;
   width: 170px;
   padding: 30px 30px 40px 30px;
   text-align: center;
+  margin: auto;
 }
-.card_help article figure {
+.content_help .card_help article figure {
   height: 195px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.card_help article p {
+.content_help .card_help article p {
   color: #FFF;
   font-size: 14px;
   line-height: 22px;
 }
-.card_help article p.card_help__one, .card_help article p.card_help__two, .card_help article p.card_help__tree, .card_help article p.card_help__for {
+.content_help .card_help article p.card_help__one, .content_help .card_help article p.card_help__two, .content_help .card_help article p.card_help__tree, .content_help .card_help article p.card_help__for {
   margin: 8px 10px;
 }
-.card_help article p.card_help__one:before, .card_help article p.card_help__two:before, .card_help article p.card_help__tree:before, .card_help article p.card_help__for:before {
+.content_help .card_help article p.card_help__one:before, .content_help .card_help article p.card_help__two:before, .content_help .card_help article p.card_help__tree:before, .content_help .card_help article p.card_help__for:before {
   font-size: 30px;
   font-weight: bold;
   position: absolute;
   margin-left: -40px;
 }
-.card_help article p.card_help__one {
+.content_help .card_help article p.card_help__one {
   line-height: 15px;
 }
-.card_help article p.card_help__one:before {
+.content_help .card_help article p.card_help__one:before {
   content: "1.";
 }
-.card_help article p.card_help__two:before {
+.content_help .card_help article p.card_help__two:before {
   content: "2.";
 }
-.card_help article p.card_help__tree:before {
+.content_help .card_help article p.card_help__tree:before {
   content: "3.";
 }
-.card_help article p.card_help__for:before {
+.content_help .card_help article p.card_help__for:before {
   content: "4.";
 }
 
-.card_therapy {
-  display: flex;
-  justify-content: space-around;
-  width: 90%;
-  margin: 40px auto;
-}
-.card_therapy article {
+.content_therapy .card_therapy article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -141,22 +170,22 @@ a.btn-primary:hover {
   background: #FFF;
   gap: 15px;
 }
-.card_therapy article figure {
+.content_therapy .card_therapy article figure {
   height: 170px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.card_therapy article h2 {
+.content_therapy .card_therapy article h2 {
   color: #5F5EAA;
   font-size: 18px;
 }
-.card_therapy article p {
+.content_therapy .card_therapy article p {
   color: #4F4F4F;
   font-size: 14px;
   line-height: 22px;
 }
-.card_therapy article .btn {
+.content_therapy .card_therapy article .btn {
   justify-content: center;
 }
 
@@ -718,14 +747,49 @@ footer .footer__bg .footer__content .footer__col .footer__datacol3 form input[ty
   margin: 10px 0 0 0;
 }
 
+.content_face {
+  margin-top: 30px;
+}
+.content_face h1 {
+  color: #5485A5;
+  font-size: 30px;
+  text-align: center;
+  margin: 0px 373px;
+}
+@media screen and (max-width: 1200px) {
+  .content_face h1 {
+    margin: 0px 28%;
+  }
+}
+
 .face {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 30px 80px;
   gap: 10px;
 }
+@media screen and (max-width: 1200px) {
+  .face {
+    margin: 30px 0px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .face {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .face {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .face article.__second_position {
   grid-column-start: 2;
+}
+@media screen and (max-width: 992px) {
+  .face article.__second_position {
+    grid-column-start: auto;
+  }
 }
 .face figure {
   display: flex;
@@ -764,35 +828,6 @@ footer .footer__bg .footer__content .footer__col .footer__datacol3 form input[ty
   font-size: 30px;
   color: #FFF;
   text-align: center;
-}
-
-.content_help p.tagline {
-  color: #FFF;
-  font-size: 21px;
-  text-align: center;
-  width: 500px;
-  margin: auto;
-}
-.content_help p.btn {
-  text-align: center;
-  margin-top: 30px;
-}
-.content_help p.btn a.btn-primary {
-  text-align: center;
-  margin: auto;
-}
-.content_help p.btn a.btn-primary span {
-  padding: 4px 40px 4px 40px;
-}
-
-.content_face {
-  margin-top: 30px;
-}
-.content_face h1 {
-  color: #5485A5;
-  font-size: 30px;
-  text-align: center;
-  margin: 0px 373px;
 }
 
 /*# sourceMappingURL=style.css.map */
