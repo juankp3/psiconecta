@@ -1,8 +1,9 @@
 @mixin primary_button($background: $color-red, $shadow : $color-red-dark)
+  display: flex
   background: $shadow
   border-radius: 20px
   border: solid 3px $color-grey
-  padding: 6px 0px 4px 0px !important
+  padding: 3px 0px 0px 0px !important
   text-decoration: none
   text-transform: uppercase
   span
@@ -10,5 +11,7 @@
     border-radius: 20px
     background: $background
     color: $color-white
+    width: 100%
+    text-align: center
   &:hover
     border: solid 3px $color-grey !important
