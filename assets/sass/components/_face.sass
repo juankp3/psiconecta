@@ -1,10 +1,27 @@
+.content_face
+  margin-top: 30px
+  h1
+    color: $color-blue
+    font-size: 30px
+    text-align: center
+    margin: 0px 373px
+    @include media-xl()
+      margin: 0px 28%
 .face
   display: grid
   grid-template-columns: repeat(4,1fr)
   margin: 30px 80px
   gap: 10px
+  @include media-xl()
+    margin: 30px 0px
+  @include media-lg()
+    grid-template-columns: repeat(3,1fr)
+  @include media-md()
+    grid-template-columns: repeat(2,1fr)
   article.__second_position
     grid-column-start: 2
+    @include media-lg()
+      grid-column-start: auto
   figure
     display: flex
     justify-items: center
