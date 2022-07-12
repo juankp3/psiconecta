@@ -76,13 +76,12 @@ $(function() {
     },
   });
 
-  $("nav.header__rightcol").click(function(){
-    if ($(this).hasClass('--active')){
-      $(this).removeClass('--active')
+  $(".menu").click(function(){
+    if ($(this).closest('.header__rightcol').hasClass('--active')){
+      $(this).closest('.header__rightcol').removeClass('--active')
       return false
     }
-    $(this).addClass('--active')
-    console.log('aaa')
+    $(this).closest('.header__rightcol').addClass('--active')
   })
 
   });

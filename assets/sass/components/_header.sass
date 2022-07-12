@@ -29,7 +29,10 @@ nav.header__rightcol
     top: 0
     background: #70A6C9
     margin-top: 58px
-    &:after
+    z-index: 2
+    ul.header__link
+      display: none
+    .menu
       content: ""
       width: 28px
       height: 23px
@@ -38,13 +41,13 @@ nav.header__rightcol
       position: absolute
       cursor: pointer
       background: url('../img/menu.svg')
-    ul.header__link
-      display: none
+
 nav.--active
   &:after
     background: url('../img/close.svg')
   ul.header__link
-    display: block !important
+    display: flex
+
 
 ul.header__link
   list-style: none
@@ -56,14 +59,13 @@ ul.header__link
     margin: 0px 10px
     flex-direction: column
     gap: 0px
-    // display: none
-    // .--active
-    //   display: block
   li
     display: flex
     @include media-md()
       padding: 8px 0
       border-bottom: solid 1px $color-white
+  li:last-child
+    border-bottom: none
   li a
     text-decoration: none
     text-transform: uppercase
