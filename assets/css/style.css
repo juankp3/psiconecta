@@ -470,7 +470,7 @@ a.btn-primary:hover {
     top: 0;
     background: #70A6C9;
     margin-top: 58px;
-    z-index: 2;
+    z-index: 3;
   }
   nav.header__rightcol ul.header__link {
     display: none;
