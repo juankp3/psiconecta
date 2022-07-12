@@ -299,8 +299,11 @@ a.btn-primary {
     left: 0;
     top: 0;
     background: #70A6C9;
-    margin-top: 58px; }
-    nav.header__rightcol:after {
+    margin-top: 58px;
+    z-index: 2; }
+    nav.header__rightcol ul.header__link {
+      display: none; }
+    nav.header__rightcol .menu {
       content: "";
       width: 28px;
       height: 23px;
@@ -308,14 +311,12 @@ a.btn-primary {
       right: 20px;
       position: absolute;
       cursor: pointer;
-      background: url("../img/menu.svg"); }
-    nav.header__rightcol ul.header__link {
-      display: none; } }
+      background: url("../img/menu.svg"); } }
 
 nav.--active:after {
   background: url("../img/close.svg"); }
 nav.--active ul.header__link {
-  display: block !important; }
+  display: flex; }
 
 ul.header__link {
   list-style: none;
@@ -334,6 +335,8 @@ ul.header__link {
       ul.header__link li {
         padding: 8px 0;
         border-bottom: solid 1px #FFF; } }
+  ul.header__link li:last-child {
+    border-bottom: none; }
   ul.header__link li a {
     text-decoration: none;
     text-transform: uppercase;
