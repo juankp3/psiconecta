@@ -198,7 +198,13 @@ a.btn-primary:hover {
 .bg {
   margin: 0 auto;
   background-image: url(../img/ondas.svg);
+  background-repeat: no-repeat;
   height: 464px;
+}
+@media screen and (max-width: 768px) {
+  .bg {
+    height: auto;
+  }
 }
 
 .header {
@@ -324,13 +330,22 @@ ul.header__link li a.--active {
 
 .banner {
   margin-top: 36px;
-  display: flex;
-  justify-content: center;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    margin-top: 0px;
+  }
 }
 .banner article {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .banner article {
+    flex-direction: column-reverse;
+  }
 }
 .banner a.btn-primary {
   background: #3C596C;
@@ -349,14 +364,27 @@ ul.header__link li a.--active {
 .banner a.btn-primary:hover {
   border: solid 3px #D4D5D6 !important;
 }
+@media screen and (max-width: 768px) {
+  .banner a.btn-primary {
+    width: 200px;
+  }
+}
 .banner .banner__info {
   width: 380px;
+}
+@media screen and (max-width: 768px) {
+  .banner .banner__info {
+    width: 85%;
+    margin: auto;
+    margin-top: 32px;
+  }
 }
 .banner .banner__info h2 {
   font-size: 36px;
   color: #5F5EAA;
   text-transform: uppercase;
   margin: 0;
+  font-size: 20px;
 }
 .banner .banner__info p {
   color: #2E006C;
@@ -364,10 +392,29 @@ ul.header__link li a.--active {
   margin: 0;
 }
 .banner .banner__buttton {
+  display: flex;
   margin-top: 30px;
+}
+@media screen and (max-width: 768px) {
+  .banner .banner__buttton {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
 }
 .banner .banner__image {
   margin-left: 40px;
+}
+@media screen and (max-width: 768px) {
+  .banner .banner__image {
+    margin-left: inherit;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .banner .banner__image img {
+    width: 70%;
+  }
 }
 
 .content_faqs {
@@ -779,6 +826,9 @@ footer .footer__bg .footer__content .footer__col .footer__datacol3 form input[ty
   .face {
     grid-template-columns: repeat(2, 1fr);
   }
+  .face article {
+    padding: 0px 15px;
+  }
 }
 .face article.__second_position {
   grid-column-start: 2;
@@ -794,11 +844,21 @@ footer .footer__bg .footer__content .footer__col .footer__datacol3 form input[ty
   align-items: center;
   flex-direction: column;
 }
+@media screen and (max-width: 768px) {
+  .face figure img {
+    width: 80%;
+  }
+}
 .face figcaption {
   font-size: 21px;
   color: #4F4F4F;
   text-align: center;
   margin: 10px 51px 0px;
+}
+@media screen and (max-width: 768px) {
+  .face figcaption {
+    margin: 10px 0px 0px;
+  }
 }
 
 .content_card {

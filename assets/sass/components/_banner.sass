@@ -1,25 +1,47 @@
 .banner
   margin-top: 36px
-  display: flex
-  justify-content: center
+  overflow: hidden
+  @include media-md()
+    margin-top: 0px
   article
     width: 100%
     display: flex
     justify-content: center
+    @include media-md()
+      flex-direction: column-reverse
   a.btn-primary
     @include primary_button($color-blue, $color-blue-dark)
+    @include media-md()
+      width: 200px
   .banner__info
     width: 380px
+    @include media-md()
+      width: 85%
+      margin: auto
+      margin-top: 32px
     h2
       font-size: 36px
       color : $color-primary-light
       text-transform: uppercase
       margin: 0
+      @include media-md()
+      font-size: 20px
     p
       color: $color-primary
       font-size: 22px
       margin: 0
   .banner__buttton
+    display: flex
     margin-top: 30px
+    @include media-md()
+      flex-direction: column
+      align-items: center
+      gap: 8px
   .banner__image
     margin-left: 40px
+    @include media-md()
+      margin-left: inherit
+      text-align: center
+    img
+      @include media-xs()
+        width: 70%

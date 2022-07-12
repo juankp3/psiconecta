@@ -18,6 +18,8 @@
     grid-template-columns: repeat(3,1fr)
   @include media-md()
     grid-template-columns: repeat(2,1fr)
+    article
+      padding: 0px 15px
   article.__second_position
     grid-column-start: 2
     @include media-lg()
@@ -27,8 +29,13 @@
     justify-items: center
     align-items: center
     flex-direction: column
+    @include media-md()
+      img
+        width: 80%
   figcaption
     font-size: 21px
     color: $color-grey-dark
     text-align: center
     margin: 10px 51px 0px
+    @include media-md()
+      margin: 10px 0px 0px

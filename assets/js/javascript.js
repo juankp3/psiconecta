@@ -25,6 +25,13 @@ $(function() {
     },
   });
 
+  var swiperBanner = new Swiper(".swiper-banner", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
   var swiper = new Swiper(".swiper-help", {
     slidesPerView: 1,
     // spaceBetween: 10,
