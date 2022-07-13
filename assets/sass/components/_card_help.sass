@@ -71,9 +71,12 @@
     color: $color-white
     text-align: center
     @include media-xs()
-      font-size: 20px
+      font-size: 20px 
   .swiper-help .swiper-pagination-bullets
     display: none
+    @include media-xl()
+      display: block
+      bottom: 210px
     @include media-xs()
       display: block
       bottom: auto
