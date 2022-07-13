@@ -16,6 +16,10 @@
 .content_step_title__info
   display: flex
   justify-content: space-between
+  @include media-md()
+    flex-direction: column
+    align-items: center
+    gap: 16px
   p
     color: $color-primary-light
     font-size: 16px
@@ -28,12 +32,14 @@
   height: 90px
 
 .content_step_bodydata
-  height: 100vh
   background: $color-blue-light2
   min-height: 600px
   height: 100%
   display: flex
   background: $color-blue-light2
+  @include media-xl()
+    .row
+      width: 90%
   .confirmation
     display: flex
     flex-direction: column
