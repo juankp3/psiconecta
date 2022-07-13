@@ -423,11 +423,21 @@ a.btn-primary:hover {
 
 .content_therapy {
   overflow: hidden;
+  position: relative;
 }
 @media screen and (max-width: 992px) {
   .content_therapy .content_swiper_therapy {
     width: 90%;
     margin: auto;
+  }
+}
+.content_therapy .content_swiper_therapy .mySwiper-winter-therapy .swiper-pagination {
+  display: none;
+  bottom: 100px;
+}
+@media screen and (max-width: 480px) {
+  .content_therapy .content_swiper_therapy .mySwiper-winter-therapy .swiper-pagination {
+    display: block;
   }
 }
 .content_therapy h1 {
@@ -1340,6 +1350,16 @@ footer .footer__bg .footer__content .footer__col .footer__datacol3 form input[ty
   margin: 20px auto;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .content_step_payment .block_payment {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .content_step_payment .block_payment {
+    width: 60%;
+  }
 }
 .content_step_payment .block_payment h1 {
   color: #BB308A;

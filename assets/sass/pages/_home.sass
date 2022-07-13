@@ -91,7 +91,10 @@
     margin: 20px auto
     display: flex
     flex-direction: column
-
+    @include media-md()
+      width: 80%
+    @include media-sm()
+      width: 60%
     h1
       color: #BB308A
       font-size: 21px
