@@ -1,5 +1,9 @@
 .content_therapy
   overflow: hidden
+  .content_swiper_therapy
+    @include media-lg()
+      width: 90%
+      margin: auto
   h1
     font-size: 30px
     color: $color-white
@@ -24,6 +28,8 @@
       gap: 15px
       @include media-lg()
         padding: 25px 15px
+      @include media-sm()
+        padding: 24px
       figure
         height: 170px
         display: flex
