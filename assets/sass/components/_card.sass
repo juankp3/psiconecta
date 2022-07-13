@@ -1,6 +1,8 @@
 .content_card
   margin-top: 30px
   text-align: center
+  @include media-lg()
+    width: 90%
   @include media-md()
     width: 90%
   h1
@@ -15,7 +17,6 @@
     @include media-md()
       font-size: 16px
   p.space_p
-    // font-size: 21px
     color: #4F4F4F
     margin: 2% 10% 6% 10%
   .cards
@@ -41,7 +42,7 @@
         padding: 30px 20px 60px 20px
       @include media-lg()
         width: 190px
-        padding: 20px 10px 40px 10px
+        padding: 20px 10px 25px 10px
       @include media-xs()
         width: 94%
       figure
@@ -49,7 +50,7 @@
         display: flex
         align-items: center
         justify-content: center
-        @include media-md()
+        @include media-lg()
           height: 100px
       h3
         font-size: 18px
@@ -58,5 +59,7 @@
       p
         color: $color-grey-dark
         font-size: 15px
+        @include media-xs()
+          margin: 0 30px
       img
         object-fit: contain

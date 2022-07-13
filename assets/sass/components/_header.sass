@@ -54,6 +54,7 @@ ul.header__link
   margin: 0
   padding: 0
   gap: 18px
+  align-items: baseline
   @include media-md()
     margin: 0px 10px
     flex-direction: column
@@ -61,6 +62,7 @@ ul.header__link
   li
     display: flex
     @include media-md()
+      width: 100%
       padding: 8px 0
       border-bottom: solid 1px $color-white
   li:last-child
@@ -70,6 +72,9 @@ ul.header__link
     text-transform: uppercase
     color: $color-primary
     padding: 4px 8px
+    border-bottom: solid 3px $color-blue-light2
+    @include media-md()
+      border-bottom: none
     &:hover
       border-bottom: solid 3px $color-red
       @include media-md()
