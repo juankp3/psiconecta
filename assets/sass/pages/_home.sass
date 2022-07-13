@@ -21,12 +21,26 @@
       font-weight: bold
 
 .content_step_body
-  height: 100vh
-  //background: $color-blue-light2
   background-image: url(../img/bg_ondas_agenda.svg)
   background-repeat-y: no-repeat
-  height: 156px
+  height: 90px
 
 .content_step_bodydata
-  height: 100vh
+  min-height: 600px
+  height: 100%
+  display: flex
   background: $color-blue-light2
+  .confirmation
+    display: flex
+    flex-direction: column
+    margin: 0 auto
+    width: 300px
+    align-items: center
+    gap: 10px
+    p
+      color: $color-primary-light
+    a.btn-primary
+      margin-top: 10px
+      text-transform: lowercase
+      span
+        padding: 4px 20px 4px 20px
