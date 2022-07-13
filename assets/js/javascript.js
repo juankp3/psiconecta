@@ -34,7 +34,6 @@ $(function() {
 
   var swiper = new Swiper(".swiper-help", {
     slidesPerView: 1,
-    // spaceBetween: 10,
     breakpoints: {
       1200: {
         slidesPerView: 4,
@@ -90,4 +89,13 @@ $(function() {
     $(this).closest('.header__rightcol').addClass('--active')
   })
 
-  });
+  $(".js_psicologo").click(function () {
+    console.log('aaaa')
+    $('.content_modal').addClass('--active')
+  })
+
+  $(".window_close").click(function () {
+    $('.content_modal').removeClass('--active')
+  })
+
+});
