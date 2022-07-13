@@ -1,5 +1,7 @@
 .content_face
   margin-top: 30px
+  @include media-lg()
+    width: 90%
   h1
     color: $color-blue
     font-size: 30px
@@ -7,6 +9,8 @@
     margin: 0px 373px
     @include media-xl()
       margin: 0px 28%
+    @include media-lg()
+      margin: 0px 20%
     @include media-md()
       font-size: 20px
       margin: 0px 10%
