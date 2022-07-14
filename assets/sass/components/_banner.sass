@@ -45,11 +45,17 @@
     display: flex
     justify-content: center 
     margin: 10px 0 0 0
+    @include media-xs()
+      margin: 40px 0 0 0
+      flex-direction: column
+      gap: 10px
     .numbers_block
       width: 100%
       display: flex
       flex-direction: column
       justify-content: center
+      @include media-xs()
+        align-items: center
       .numbers_block__number
         display: flex
         justify-content: center
