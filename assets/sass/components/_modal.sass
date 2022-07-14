@@ -3,7 +3,7 @@
   position: fixed
   width: 100vw
   height: 100vh
-  z-index: 11
+  z-index: 999999
   @include media-xs()
     height: 100%
   .modal_window_bg
@@ -53,11 +53,12 @@
         font-size: 30px
         font-weight: 700px
         line-height: 36.57px
+        font-family: 'Montserrat-Bold'
       .colder_charge h5
         color: $color-primary-light
-        font-weight: 500px
-        line-height: 20px
+        font-size: 20px
         margin: 7px 0 10px 0
+        font-family: 'Montserrat-Medium'
       .colder_description
         color: $color-grey-dark
         font-weight: 400
@@ -89,6 +90,7 @@
         width: 100%
         order: 1
 .content_modal.--active
-  display: flex 
+  top: 0
+  display: flex
   justify-content: center
   align-items: center
