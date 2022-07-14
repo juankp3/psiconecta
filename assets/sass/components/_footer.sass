@@ -11,7 +11,7 @@ footer
     @include media-xs()
       width: 100%
       height: auto
-      padding: 15% 0 0 0
+      padding: 30% 0 0 0
     .footer__content
       display: flex
       margin-bottom: 100px
@@ -41,6 +41,37 @@ footer
           width: 80%
           @include media-xs()
             width: 90%
+          img.footer__logo
+            width: 180px
+            @include media-xs()
+              width: 80%
+          .datacol1__phone
+            margin: 5px 0
+            display: flex
+            align-items: center
+            color: #4F4F4F
+            padding: 50px 0 10px 0
+            img
+              width: 18px
+              margin: 0 11px 0 0
+          .datacol1__location
+            margin: 5px 0
+            display: flex
+            align-items: center
+            color: #4F4F4F
+            padding: 10px 0 10px 0
+            img
+              width: 18px
+              margin: 0 11px 0 0
+          .datacol1__email
+            margin: 5px 0
+            display: flex
+            align-items: center
+            color: #4F4F4F
+            padding: 10px 0 30px 0
+            img
+              width: 18px
+              margin: 0 11px 0 0
           h4
             color: $color-blue
             font-size: 30px
@@ -109,3 +140,14 @@ footer
             background-color: #5F5EAA
             color: #ffffff
             margin: 10px 0 0 0
+          
+          ul.datacol3__list
+            padding: 0
+            margin: 80px 0 0 0
+            list-style: none
+            li
+              margin: 0 0 10px 0 
+              a
+                color: $color-primary-light
+                font-size: 14px
+                text-decoration: underline

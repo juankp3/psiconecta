@@ -828,7 +828,7 @@ footer {
       footer .footer__bg {
         width: 100%;
         height: auto;
-        padding: 15% 0 0 0; } }
+        padding: 30% 0 0 0; } }
     footer .footer__bg .footer__content {
       display: flex;
       margin-bottom: 100px; }
@@ -862,6 +862,38 @@ footer {
           @media screen and (max-width: 480px) {
             footer .footer__bg .footer__content .footer__col .footer__datacol1 {
               width: 90%; } }
+          footer .footer__bg .footer__content .footer__col .footer__datacol1 img.footer__logo {
+            width: 180px; }
+            @media screen and (max-width: 480px) {
+              footer .footer__bg .footer__content .footer__col .footer__datacol1 img.footer__logo {
+                width: 80%; } }
+          footer .footer__bg .footer__content .footer__col .footer__datacol1 .datacol1__phone {
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+            color: #4F4F4F;
+            padding: 50px 0 10px 0; }
+            footer .footer__bg .footer__content .footer__col .footer__datacol1 .datacol1__phone img {
+              width: 18px;
+              margin: 0 11px 0 0; }
+          footer .footer__bg .footer__content .footer__col .footer__datacol1 .datacol1__location {
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+            color: #4F4F4F;
+            padding: 10px 0 10px 0; }
+            footer .footer__bg .footer__content .footer__col .footer__datacol1 .datacol1__location img {
+              width: 18px;
+              margin: 0 11px 0 0; }
+          footer .footer__bg .footer__content .footer__col .footer__datacol1 .datacol1__email {
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+            color: #4F4F4F;
+            padding: 10px 0 30px 0; }
+            footer .footer__bg .footer__content .footer__col .footer__datacol1 .datacol1__email img {
+              width: 18px;
+              margin: 0 11px 0 0; }
           footer .footer__bg .footer__content .footer__col .footer__datacol1 h4 {
             color: #5485A5;
             font-size: 30px; }
@@ -932,6 +964,16 @@ footer {
             background-color: #5F5EAA;
             color: #ffffff;
             margin: 10px 0 0 0; }
+          footer .footer__bg .footer__content .footer__col .footer__datacol3 ul.datacol3__list {
+            padding: 0;
+            margin: 80px 0 0 0;
+            list-style: none; }
+            footer .footer__bg .footer__content .footer__col .footer__datacol3 ul.datacol3__list li {
+              margin: 0 0 10px 0; }
+              footer .footer__bg .footer__content .footer__col .footer__datacol3 ul.datacol3__list li a {
+                color: #5F5EAA;
+                font-size: 14px;
+                text-decoration: underline; }
 
 .content_face {
   margin-top: 30px; }
