@@ -427,7 +427,11 @@ a.btn-primary {
   height: 464px; }
   @media screen and (max-width: 768px) {
     .bg {
-      height: auto; } }
+      height: 651px; } }
+  @media screen and (max-width: 480px) {
+    .bg {
+      height: 651px;
+      background-image: url(../img/banner-bg.svg); } }
 
 .header {
   display: flex;
@@ -619,6 +623,9 @@ ul.header__link {
       display: flex;
       flex-direction: column;
       justify-content: center; }
+      @media screen and (max-width: 768px) {
+        .banner .banner__numbers .numbers_block {
+          align-items: center; } }
       @media screen and (max-width: 480px) {
         .banner .banner__numbers .numbers_block {
           align-items: center; } }
