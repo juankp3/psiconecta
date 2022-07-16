@@ -5,11 +5,14 @@
     @include media-lg()
       width: 90%
       margin: auto
+    @include media-xs()
+      height: 476px
     .mySwiper-winter-therapy .swiper-pagination
       display: none
       bottom: 100px
       @include media-xs()
         display: block
+        bottom: 0
   h1
     font-size: 30px
     color: $color-white
